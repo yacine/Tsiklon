@@ -2,8 +2,17 @@
 
 Starter kit for web designers.
 
-
+## Instalation
+```
+npm install 
+```
+**or**
+```
+yarn install
+```
 ## Todo
-- [ ] Browser sync cfg
-- [ ] Pug/ Sass gulp cfg
-- [ ] Bulma test page
+- [ ] File structure
+- [ ] Sass / Bulma cfg
+- [ ] Pug cfg
+- [ ] H5PB
+- [ ] Making test page
