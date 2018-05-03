@@ -16,3 +16,4 @@ yarn install
 - [ ] Pug cfg
 - [ ] H5PB
 - [ ] Making test page
+- [ ] cli options
