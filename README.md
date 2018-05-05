@@ -3,9 +3,9 @@
 
 # Tsiklon starter kit
 
-Starter kit for web designers.
+A simple starter kit for web designers.
 
-## Instalation
+## Installation
 ```
 npm install 
 ```
@@ -15,8 +15,7 @@ yarn install
 ```
 ## Todo
 - [ ] File structure
-- [ ] Sass / Bulma cfg
 - [ ] Pug cfg
-- [ ] H5PB
-- [ ] Making test page
+- [ ] Sass cfg
+- [ ] Theme page
 - [ ] cli options
