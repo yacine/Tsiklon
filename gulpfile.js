@@ -4,7 +4,7 @@ var pug = require('gulp-pug');
 var browserSync = require('browser-sync');
 var reload = browserSync.reload;
 
-// Compile css
+// Compile Sass
 gulp.task('styles', function() {
   return gulp.src('src/sass/*.sass')
     .pipe(sass().on('error', sass.logError))
@@ -12,19 +12,22 @@ gulp.task('styles', function() {
     .pipe(reload({ stream: true }));
 });
 
+// Compile pug
 gulp.task('markup', function() {
-  return gulp.src('src/pages/**/*.pug')
+  return gulp.src('src/pug/**/*.pug')
     .pipe(pug())
     .pipe(gulp.dest('dist'))
     .pipe(reload({ stream: true }));
 });
 
+// Optimize images
 gulp.task('images', function() {
-  return gulp.src('src/images/**/*')
-    .pipe(gulp.dest('dist'))
+  return gulp.src('src/img/**/*')
+    .pipe(gulp.dest('./dist/assets/img'))
     .pipe(reload({ stream: true }));
 });
 
+// Serve
 gulp.task('serve', ['styles', 'markup', 'images'], function() {
   browserSync({
     server: {
@@ -33,7 +36,7 @@ gulp.task('serve', ['styles', 'markup', 'images'], function() {
   });
 
   gulp.watch(
-    ['src/**/*.pug', 'src/styles/**/*.sass', 'src/images/**/*'],
+    ['src/**/*.pug', 'src/sass/**/*.sass', 'src/images/**/*'],
     ['styles', 'markup', 'images']
   );
 });
