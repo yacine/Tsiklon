@@ -14,8 +14,8 @@ npm install
 yarn install
 ```
 ## Todo
-- [ ] File structure
-- [ ] Pug cfg
-- [ ] Sass cfg
+- [x] File structure
+- [x] Pug cfg
+- [x] Sass cfg
 - [ ] Theme page
 - [ ] cli options
